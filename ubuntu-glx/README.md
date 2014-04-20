@@ -6,7 +6,7 @@ This docker container enables running HW accelerated OpenGL application in docke
 Screenshot
 ----------
 
-![Screenshot](https://github.com/syoyo/docker-utils/blob/master/img/docker-opengl-glx.png?raw=true)
+![Screenshot](https://github.com/syoyo/docker-utils/blob/master/ubuntu-glx/img/docker-opengl-glx.png?raw=true)
 
 How it works
 ------------
