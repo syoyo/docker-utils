@@ -8,5 +8,3 @@ if [ ! -f "NVIDIA-DRIVER.run" ]; then
 fi
 
 sudo docker build -t lighttransport/ubuntu-nv-glx .
-
-rm -rf ${TMP_DIR}
