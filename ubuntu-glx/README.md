@@ -11,10 +11,10 @@ Screenshot
 How it works
 ------------
 
-* OpenGL driver(Currently NVIDIA proprietary driver) is installed on host OS(Tested on ubuntu 14.04).
+* OpenGL driver(Currently tested on NVIDIA proprietary driver. AMD catalyst driver may work) is installed on host OS(Tested on ubuntu 14.04).
 * Setup headless X11(--use-display-device=None) in docker container(tested on ubuntu base container)
 * Run X11 in headless mode in docker container.
-* Run X11vnc to send screen to the client through VNC.
+* Run x11vnc in docker container to send screen to the client(host OS or any) through VNC.
 
 
 Setup
