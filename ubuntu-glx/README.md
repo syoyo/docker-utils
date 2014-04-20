@@ -1,4 +1,4 @@
-Hardware accerated OpenGL in docker container
+Hardware accelerated OpenGL in docker container
 =============================================
 
 This docker container enables running HW accelerated OpenGL application in docker container.
