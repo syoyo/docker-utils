@@ -4,12 +4,14 @@
 
 Provide virtualized(containerized) GPU(X11 + HW accelerated OpenGL) environment per user login(like GPU as a service).
 
-## Method
+## Methods
+
+Here's list of method(s) confirmed so far.
 
 * Host OS : Ubuntu + NV proprietary driver 
 * Container : ubuntu(14.04 better?)
 
-## X11 socket share
+### X11 socket share
 
 It seems user name in the container should be same with Host OS's account. At least root account failed to run X11 application.
 
