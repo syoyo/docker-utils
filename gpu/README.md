@@ -13,10 +13,12 @@ Here's list of method(s) confirmed so far.
 
 ### X11 socket share
 
-It seems user name in the container should be same with Host OS's account. At least root account failed to run X11 application.
+Bind host's /tmp/.X11-unix to container to access GLX.
+
+It seems user name in the container should be same with Host OS's account. At least root account(in the container) failed to run X11 application.
 
 ```
-$ docker run -e DISPLAY=unix+$DISPLAY -v=/tmp/.X11-unix:/tmp/.X11-unix:rw -i -t  lighttransport/ubuntu-nv-glx /bin/bash
+$ docker run -e DISPLAY=unix:$DISPLAY -v=/tmp/.X11-unix:/tmp/.X11-unix:rw -i -t  lighttransport/ubuntu-nv-glx /bin/bash
 $ useradd syoyo
 $ su syoyo
 $ glxgears # or some GLX application
