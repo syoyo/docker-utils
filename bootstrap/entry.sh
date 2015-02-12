@@ -7,4 +7,4 @@
 adduser --disabled-password --gecos '' syoyo
 adduser syoyo sudo
 echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
-su -m syoyo
+su - syoyo
